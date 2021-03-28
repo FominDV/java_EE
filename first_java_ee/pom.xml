@@ -16,6 +16,7 @@
 
     <modules>
         <module>first_ee</module>
+        <module>second_ee</module>
     </modules>
 
 </project>
