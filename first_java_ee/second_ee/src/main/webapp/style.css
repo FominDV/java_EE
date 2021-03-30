@@ -6,4 +6,21 @@ ul {
 
 li {
     display: inline;
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+}
+
+.header{
+    background-color: lightblue;
+}
+.main_tittle{
+    font-size: 45px;
+    color: coral;
+    display: flex;
+    justify-content: center;
 }

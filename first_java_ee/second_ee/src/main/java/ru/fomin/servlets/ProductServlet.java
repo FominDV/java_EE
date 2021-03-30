@@ -1,2 +1,19 @@
-package ru.fomin.servlets;public class ProductServlet {
+package ru.fomin.servlets;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet("/product")
+public class ProductServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("header","PRODUCT");
+        getServletContext().getRequestDispatcher("/header").include(req, resp);
+    }
+
 }
